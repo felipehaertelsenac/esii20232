@@ -1,0 +1,239 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  color: #333;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+table { border-collapse: collapse; border-spacing: 0; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+input, select { vertical-align: middle; }
+a{
+  text-decoration: none;
+}
+
+:root {
+  --laranja: #f77d0c;
+  --azul: #003a7b;
+}
+
+body {
+  font-family: Roboto, 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #333;
+  background: #fff;
+}
+.body-index {
+  background: var(--azul);
+}
+header{
+  height: 78px;
+}
+.top {
+  background: #fff;
+  border-bottom: 10px solid var(--laranja);
+  height: 78px;  
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index: 1;
+}
+
+
+.wrapper{
+  width: 90%;
+  margin: 0 auto;
+}
+.content-index {
+  color: #fff;
+  position: relative;
+  height: calc(100vh - 78px);
+}
+
+.content-index h1{
+  font-weight: 700;
+  font-size: 4em;
+  line-height: 45px;
+  text-align: center;
+  margin-bottom: 100px;
+  color: #fff;
+}
+
+.content-index h2{
+  color: #fff;
+}
+
+.titulo {
+  position: absolute;
+  top: calc(50% - 225px + 78px);
+  text-align: center;
+  width: 90%;
+}
+h1{
+  font-size: 3em;
+}
+.content-slides h1 {
+  margin: 4% 0;
+}
+.content {
+  margin: 72px auto 140px;
+}
+h2 {
+  font-size: 2em;
+  text-align: center;
+}
+ul {
+  font-size: 2em;
+}
+li {
+  margin-bottom: 1%;
+  border: #dedede solid 1px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgb(0 0 0 / 10%);
+  list-style: none;
+  padding: 2% 30px;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: var(--azul);
+}
+
+footer h2{
+  color: #fff;
+  font-size: 1.3em;
+}
+.faculdade{
+  float: left;
+  padding: 30px 0 30px 5%;
+}
+.nome {
+  float: right;
+  padding: 30px 5% 30px 0;
+}
+.fa.fa-4{
+  font-size: 4em;
+  color: #333;
+  position: fixed;
+  bottom: 80px;
+}
+.fa-angle-double-left {
+  left: 5%;
+}
+.fa-angle-double-right {
+  right: 5%;
+}
+.propriedade{
+  color: var(--laranja);
+}
+.valor{
+  color: var(--azul);
+}
+.demo{
+  position: relative;
+  margin: 30px 0;
+  border: 2px solid var(--azul);
+  padding: 10px;
+  min-height: 200px;
+}
+.demo div {
+  font-size: 1.3em;
+  border: 2px solid var(--laranja);
+}
+.static{
+  position: static;
+}
+
+.relative {
+  position: relative;
+  left: 20px;
+  top:50px;
+}
+img.relative{
+  left: 220px;
+}
+.fixed{
+  position: fixed;
+  top: 150px;
+  right: 50px;
+  width: 250px;
+  border: 2px solid var(--laranja);
+}
+img.fixed{
+  top: 0;
+  right: 0;
+  z-index: 1;
+  border: none;
+}
+.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 2px solid #73AD21;
+}
+img.absolute{
+  top: 0;
+  right: 0;
+  z-index: 1;
+  border: none;
+}
+.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  border: 2px solid var(--laranja);
+}
+
+dl > div {
+  background: #fff;
+  padding: 24px 0 0 0;
+}
+
+dt {
+  background: #b8c1c8;
+  border-bottom: 1px solid #989ea4;
+  border-top: 1px solid #717d85;
+  color: #fff;
+  font: bold 18px/21px Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 2px 0 0 12px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 88px;
+}
+
+dd {
+  font: bold 20px/45px Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0 0 0 12px;
+  white-space: nowrap;
+}
+
+dd + dd {
+  border-top: 1px solid #ccc;
+}
